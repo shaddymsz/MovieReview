@@ -1,0 +1,40 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <div class="jumbotron progressive replace" [style.backgroundImage]="'url('+ detail.Poster +')'" style="height: 600px;background-repeat: no-repeat;">
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-4">
+      </div>
+      <div class="card-body">
+        <div class="card-footer"> <h5 class="card-title">Title - {{detail.Title}}</h5> </div>
+        <div class="card-footer"> <p class="card-text">Type - {{detail.Type}}</p> </div>
+        <div class="card-footer">
+          <small class="text-muted">Release Date-:{{detail.Year}}</small>
+        </div>
+        <div class="card-footer">
+        <h5 class="card-title"><h3>Actors -</h3>{{detail.Actors}}</h5> 
+      </div>
+      
+      </div>
+    </div>
+    <div class="custom-slider">
+    <form #userRate="ngForm"  (ngSubmit)="onSubmit(userRate)"> 
+      <p>Value: <input type="number" [(ngModel)]="value" name="rate"></p>
+      <ng5-slider [(value)]="value" [options]="options"></ng5-slider>
+      
+        <button type="submit" class="signupbtn" >Rate</button>
+      </form>
+
+      </div>
+      
+  </div>
+  
+</div>
+
+

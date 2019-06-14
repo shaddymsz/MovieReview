@@ -1,0 +1,14 @@
+<br>
+<br>
+<button (click)=logout() type="submit"  class="signupbtn" >Logout</button>
+<br>
+<br>
+<div class="container">
+<form #userSearch="ngForm"  (ngSubmit)="onSubmit(userSearch)" class="form-inline my-2 my-lg-0">
+  <input type="text" #name="ngModel" required name="search"  [(ngModel)]="userSearch.search" value="Search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+</form>
+</div>
+
+<app-movie-card></app-movie-card>
+

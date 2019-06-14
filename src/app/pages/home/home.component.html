@@ -1,0 +1,22 @@
+<br>
+<br>
+<button (click)=logout() type="submit"  class="signupbtn" >Logout</button>
+<br>
+<br>
+<h2> Movies Reviewed By You</h2>
+<div class="card-columns" >
+  <div class="card" *ngFor="let movie of movieList" (click)=openDetails(movie.imdbID,movie) style="cursor: pointer;" >
+    <a style="height:200px;width:200px" href="{{movie.Poster}}" class="progressive replace">
+      <img height="200px" width="200px" src="{{movie.Poster}}" class="preview one" alt="image" />
+    </a>
+    <div class="card-body">
+      <h5  class="card-title">Title - {{movie.Title}}</h5>
+      <p class="card-text">Type - {{movie.Type}}</p>
+      <p class="card-text">Language - {{movie.Language}}</p>
+      <p class="card-text">Rating - {{movie.imdbRating}}</p>
+      <div class="card-footer">
+        <small class="text-muted">Release Date-:{{movie.Year}}</small>
+      </div>
+    </div>
+  </div>
+</div>

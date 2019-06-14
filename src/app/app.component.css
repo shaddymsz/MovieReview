@@ -1,0 +1,42 @@
+.containers{
+    max-width: 1800px;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 25px;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .button{
+    padding-left:700px;
+    color:white;
+    
+    margin:20px;
+  }
+  .button:hover{
+    
+    color: black;
+  }
+  li a:hover {
+    background-color: black;
+  }
+ 
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
